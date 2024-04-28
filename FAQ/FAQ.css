@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root{
+    --color-1: #e5e5e5;
+    --color-2: orange;
+    --color-3: #292734;
+    --color-4: #f7f7f7;
+    --color-5: black;
+}
+
+.dark-mode {
+    --color-1: #121212;
+    --color-2: orange;
+    --color-3: #3f3f3f;
+    --color-4: #282828;
+    --color-5: #e7e7e7;
+}
+
+
+body {
+    font-family: Quicksand, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-1);
+    transition: 0.5s;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: var(--color-5);
+}
+
+.FAQsection {
+    padding: 30px 100px;
+    background-color: var(--color-1);
+    transition: 0.5s;
+}
+
+.faq-header {
+    display: inline-block;
+    padding-bottom: 8px;
+    border-bottom: 3px solid var(--color-2);
+    width: 80px;
+    transition: 0.5s;
+}
+
+.items {
+    background-color: var(--color-4);
+    padding: 20px;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+.faq-item {
+    margin-bottom: 20px;
+    background-color: var(--color-4);
+    border-radius: 5px;
+    padding: 1px 10px;
+    box-shadow:  0 10px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+
+}
+.question {
+    margin: 0;
+    padding: 15px 0px;
+}
+
+.faq-item .answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    font-size: 15px;
+}
+
+.faq-item .answer p{
+    margin: 15px 0px;
+    font-size: 16px;
+}
+
+.faq-item.active .answer {
+    max-height: 1000px;
+    transition: max-height 0.5s ease-in;
+}
+
+.faq-item .question {
+    cursor: pointer;
+}
