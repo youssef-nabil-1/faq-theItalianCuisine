@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root{
+    --color-1: #e5e5e5;
+    --color-2: orange;
+    --color-3: #292734;
+    --color-4: #f7f7f7;
+    --color-5: black;
+}
+
+.dark-mode {
+    --color-1: #121212;
+    --color-2: orange;
+    --color-3: #3f3f3f;
+    --color-4: #282828;
+    --color-5: #e7e7e7;
+}
+
+body {
+    font-family: Quicksand, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-1);
+    transition: 0.5s;
+}
+
+h1, h2, h3, h4, h5, h6, p, label {
+    color: var(--color-5);
+    transition: 0.5s;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: var(--color-4);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+}
+
+.apply-title {
+    display: inline-block;
+    padding-bottom: 8px;
+    border-bottom: 3px solid orange;
+    width: 350px;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+textarea {
+    height: 100px;
+}
+
+.apply-btn {
+    background-color: orange;
+    margin-top: 18px;
+    color: #151515;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.apply-btn span{
+
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.apply-btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.apply-btn:hover span {
+    padding-right: 25px;
+}
+
+.apply-btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+

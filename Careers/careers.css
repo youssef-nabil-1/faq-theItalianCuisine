@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+:root{
+    --color-1: #e5e5e5;
+    --color-2: orange;
+    --color-3: #292734;
+    --color-4: #f7f7f7;
+    --color-5: black;
+}
+
+.dark-mode {
+    --color-1: #121212;
+    --color-2: orange;
+    --color-3: #3f3f3f;
+    --color-4: #282828;
+    --color-5: #e7e7e7;
+}
+
+
+body {
+    font-family: Quicksand, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-1);
+    transition: 0.5s;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: var(--color-5);
+}
+
+.page-title{
+    display: inline-block;
+    border-bottom: 3px solid var(--color-2);
+    width: 350px;
+}
+
+.page-title h2{
+    margin: 12px 0px;
+}
+
+.advert-img-div{
+    z-index: -1;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-height: 550px;
+}
+.advert-img {
+    width: 100%;
+}
+
+.benifits-title {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -100px;
+    width: 1100px;
+    height: 180px;
+    background-color: var(--color-2);
+    border-radius: 9px;
+}
+
+.benifits-title h2{
+    font-weight: bold;
+    font-family: "Rubik";
+    font-size: 40px;
+    color: #121212;
+}
+
+.benifit-item{
+    margin: 80px 100px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.benifits .benifit-icon {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 70px;
+    border: 3px solid var(--color-2);
+    border-radius: 15px;
+    transition: 0.3s ease;
+    background-color: #e7e7e7;
+}
+
+.benifits .benifit-icon:hover{
+    border: 3px solid var(--color-3);
+}
+
+.benifits .benifit-item .icon {
+    width: 30px;
+}
+
+.benifits .benifit-item h4 {
+    font-family: "Rubik";
+    font-size: 20px;
+    font-weight: bold;
+    margin: 25px 0px;
+}
+
+.animation {
+    opacity: 0;
+    transform: translateX(-300px);
+    transition: all 0.7s ease-out;
+    max-width: 1300px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: var(--color-4);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.scroll-animation {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+.job-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 80px;
+}
+  
+.job-card {
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+    padding: 30px;
+    background-color: var(--color-3);
+    border: 1px solid var(--color-1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: inline-block;
+}
+
+.inner-job{
+    margin-top: -80px;
+    width: 300px;
+    height: 430px;
+    border-radius: 10px;
+    display: block;
+}
+
+.career {
+    height: 380px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.career .career-img {
+    height: 380px;
+    display: block;
+}
+  
+.apply-btn {
+    background-color: var(--color-2);
+    margin-top: 18px;
+    color: #151515;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.apply-btn span{
+
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.apply-btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.apply-btn:hover span {
+    padding-right: 25px;
+}
+
+.apply-btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
