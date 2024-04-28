@@ -41,6 +41,7 @@ h1, h2, h3, h4, h5, h6, p {
     border-bottom: 3px solid var(--color-2);
     width: 80px;
     transition: 0.5s;
+    margin-bottom: 20px;
 }
 
 .items {
