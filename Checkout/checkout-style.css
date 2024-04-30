@@ -1,0 +1,65 @@
+﻿body {
+ background-image= url("offer-background.jpg");
+    font-family: "Quicksand", sans-serif;
+    color:orange;
+fieldset
+{background-color: rgb(80, 80, 80);
+border-radius: 10px;
+ max-width: 50%;
+ margin:auto;
+margin-top: 0px;
+ 
+}
+
+legend
+{
+text-align: center;
+ font-size: 30px;
+}
+div#info
+{
+ text-align: center;
+box-sizing: border-box;
+padding-top: 10px;
+ padding-bottom: 10px;
+ margin: auto;
+
+}
+
+input
+
+{
+color:orange;
+border-style: solid;
+border-width: 2px;
+border-radius: 7px;
+border-color: orange;
+ background: rgba(0, 0, 0, 0.0)
+
+}
+label
+{
+padding-top: 20px;
+ 
+}
+input
+
+{
+ margin-bottom: 20px;
+}
+div#submit
+{
+input
+{
+border-style: solid;
+border-width: 2px;
+border-radius: 20px;
+border-color: beige;
+background-color: beige;
+color: orange;
+margin-left: 330px;
+font-size: 20px;
+text-align: center;
+}
+
+}
